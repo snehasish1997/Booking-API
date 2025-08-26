@@ -1,4 +1,4 @@
-# Omnify Booking API (FastAPI)
+# Booking API (FastAPI)
 
 A small booking API for a fitness studio.
 
@@ -100,4 +100,3 @@ omnify-booking-api/
 ```
 
 ---
-**Loom**: In your walkthrough, show `/docs`, list classes in two timezones, create a booking, then show `/bookings`.
