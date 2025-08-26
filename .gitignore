@@ -31,6 +31,6 @@ instance/
 node_modules/
 build/
 
-# Optional: uncomment if you also want to avoid uploading Postman stuff
+
 # *.postman_collection.json
-# .postman/
+
