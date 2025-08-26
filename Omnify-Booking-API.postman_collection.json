@@ -1,0 +1,116 @@
+{
+  "info": {
+    "name": "Omnify Booking API",
+    //"_postman_id": "8b9d5c3b-1234-4c2a-98b7-abc123abc123",
+    //"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+
+
+  },
+  "item": [
+    {
+      "name": "List Classes (IST default)",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:8000/classes",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "classes"
+          ]
+        }
+      }
+    },
+    {
+      "name": "List Classes (Europe/London)",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:8000/classes?tz=Europe/London",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "classes"
+          ],
+          "query": [
+            {
+              "key": "tz",
+              "value": "Europe/London"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Create Booking",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"class_id\": 1, \"client_name\": \"Alice\", \"client_email\": \"rimon@example.com\"}"
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/book",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "book"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Get Bookings by Email",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:8000/bookings?email=alice@example.com",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "bookings"
+          ],
+          "query": [
+            {
+              "key": "email",
+              "value": "rimon@example.com"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
