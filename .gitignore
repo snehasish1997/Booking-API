@@ -14,8 +14,8 @@ dist/
 .eggs/
 
 # Envs
-.venv/
-venv/
+.books/
+books/
 env/
 ENV/
 
